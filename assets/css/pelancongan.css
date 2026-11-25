@@ -1,0 +1,250 @@
+/* Pelancongan page */
+.tr-intro {
+    max-width: 760px;
+    margin: 0 auto 2.5rem;
+    text-align: center
+}
+
+.tr-intro h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin-bottom: .75rem
+}
+
+.tr-intro p {
+    color: var(--ink-soft);
+    line-height: 1.7
+}
+
+.tr-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+    margin: 0 0 3rem
+}
+
+.tr-stat {
+    background: var(--sky-tint);
+    border-radius: var(--radius);
+    padding: 1.1rem;
+    text-align: center
+}
+
+.tr-stat b {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    color: var(--kinabalu-blue)
+}
+
+.tr-stat span {
+    font-size: .85rem;
+    color: var(--ink-soft)
+}
+
+.tr-map {
+    margin: 0 0 3rem
+}
+
+.tr-map figure {
+    margin: 0;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: #fff
+}
+
+.tr-map img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.tr-map figcaption {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem 1rem;
+    font-size: .9rem;
+    color: var(--ink-soft)
+}
+
+.tr-map figcaption a {
+    color: var(--kinabalu-blue);
+    font-weight: 600
+}
+
+.tr-h {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    margin: 0 0 .4rem
+}
+
+.tr-sub {
+    color: var(--ink-soft);
+    margin-bottom: 1.5rem
+}
+
+.tr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+    margin-bottom: 3rem
+}
+
+.tr-card {
+    background: var(--paper-raised);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--gold);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.3rem
+}
+
+.tr-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: .15rem;
+    color: var(--ink)
+}
+
+.tr-card small {
+    display: block;
+    color: var(--ink-soft);
+    margin-bottom: .8rem;
+    font-size: .82rem
+}
+
+.tr-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.tr-card li {
+    padding: .4rem 0 .4rem 1.5rem;
+    position: relative;
+    border-top: 1px solid var(--line);
+    font-size: .95rem
+}
+
+.tr-card li:first-child {
+    border-top: 0
+}
+
+.tr-card li::before {
+    content: "\f3c5";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: .5rem;
+    color: var(--kinabalu-blue);
+    font-size: .8rem
+}
+
+.tr-more {
+    background: var(--sky-tint);
+    border-radius: var(--radius);
+    padding: 1.4rem;
+    margin-bottom: 3rem
+}
+
+.tr-more h3 {
+    margin-bottom: .8rem
+}
+
+.tr-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.tr-chips li {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: .35rem .85rem;
+    font-size: .9rem
+}
+
+.tr-stay {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 3rem
+}
+
+.tr-note {
+    border-left: 4px solid var(--gold);
+    background: var(--paper);
+    padding: 1rem 1.2rem;
+    border-radius: 0 var(--radius) var(--radius) 0;
+    color: var(--ink-soft);
+    line-height: 1.6
+}
+
+.tr-credit {
+    text-align: center;
+    color: var(--ink-soft);
+    font-size: .9rem;
+    padding-bottom: 1rem
+}
+
+@media(max-width:600px) {
+    .tr-grid {
+        grid-template-columns: 1fr
+    }
+}
+/* ---- Tempat pelancongan mengikut DUN ---- */
+.tr-dun-nav { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.5rem; }
+.tr-dun-nav a {
+    display: inline-flex; align-items: center; gap: .45rem;
+    padding: .5rem .9rem; border: 1px solid var(--line-strong); border-radius: 999px;
+    background: var(--paper-raised); color: var(--ink); font-size: .9rem; text-decoration: none;
+}
+.tr-dun-nav a:hover { border-color: var(--kinabalu-blue); }
+.tr-dun-nav b { color: var(--kinabalu-blue); }
+.tr-dun-nav span { min-width: 1.6rem; padding: 0 .4rem; border-radius: 999px; background: var(--sky-tint); font-size: .78rem; font-weight: 700; text-align: center; }
+
+.tr-dun { margin: 0 0 2.5rem; scroll-margin-top: calc(var(--nav-height, 84px) + 1.5rem); }
+.tr-dun-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem 1rem; padding-bottom: .6rem; border-bottom: 3px solid var(--gold); margin-bottom: .25rem; }
+.tr-dun-head h3 { margin: 0; font-size: 1.35rem; color: var(--ink); }
+.tr-dun-head h3 span { margin-right: .35rem; color: var(--kinabalu-blue); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; vertical-align: middle; }
+.tr-dun-head p { margin: 0; color: var(--ink-soft); font-size: .92rem; }
+
+.tr-table-wrap { overflow-x: auto; }
+.tr-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.tr-table th, .tr-table td { padding: .7rem .75rem; border-bottom: 1px solid var(--line); text-align: left; vertical-align: middle; }
+.tr-table thead th { color: var(--ink-soft); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; }
+.tr-table tbody th { font-weight: 600; color: var(--ink); }
+.tr-num { width: 3rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.tr-loc small { display: block; margin-top: .15rem; color: var(--ink-soft); font-size: .8rem; }
+.tr-coord { color: var(--kinabalu-blue); font-variant-numeric: tabular-nums; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.tr-coord:hover { text-decoration: underline; }
+.tr-pin { display: inline-block; padding: .05rem .5rem; border-radius: 999px; font-size: .72rem; font-weight: 700; vertical-align: middle; }
+.tr-pin--approx { background: #fbf4e4; color: #7a5714; }
+.tr-pin--none { background: var(--sky-tint); color: var(--ink-soft); }
+.tr-img { width: 140px; }
+.tr-img img { display: block; width: 120px; height: 80px; object-fit: cover; border-radius: 6px; background: var(--sky-tint); }
+.tr-coord-note { margin-bottom: 2rem; }
+
+html[data-theme='dark'] .tr-pin--approx { background: rgba(226, 188, 107, .16); color: #f0d38f; }
+
+/* Phones: each place becomes a small card (photo on the left, details on the right). */
+@media (max-width: 640px) {
+    .tr-table thead { display: none; }
+    .tr-table, .tr-table tbody { display: block; }
+    .tr-table tr {
+        display: grid; grid-template-columns: 96px 1fr; grid-template-areas: "img name" "img loc";
+        gap: .15rem .85rem; padding: .8rem 0; border-bottom: 1px solid var(--line);
+    }
+    .tr-table th, .tr-table td { padding: 0; border: 0; }
+    .tr-num { display: none; }
+    .tr-table tbody th { grid-area: name; }
+    .tr-loc { grid-area: loc; font-size: .88rem; }
+    .tr-img { grid-area: img; width: auto; }
+    .tr-img img { width: 96px; height: 68px; }
+}

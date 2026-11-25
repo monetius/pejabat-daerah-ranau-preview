@@ -1,0 +1,535 @@
+/* Log Masuk Staf — full-height navy backdrop with the Kinabalu ridge, intro on the left,
+   a crisp sign-in card on the right. */
+.sl {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    min-height: 100svh;
+    padding: calc(var(--nav-height, 84px) + var(--nav-gap, 1rem) + 2.5rem) 1.75rem 4rem;
+    overflow: hidden;
+    background: var(--navy);
+    color: #fff;
+}
+
+.sl-backdrop {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        none,
+        none,
+        none,
+        none,
+        none;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, max(100%, 1672px) auto, max(100%, 1672px) auto, 100% 100%, 100% 100%;
+    background-position: center, center bottom -330px, center bottom -300px, center, center;
+}
+
+.sl-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 440px);
+    gap: clamp(2rem, 6vw, 5.5rem);
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* ---- Intro ---- */
+.sl-crest {
+    width: 54px;
+    height: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35));
+}
+
+.sl-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 0 0 0.6rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #e2bc6b;
+}
+
+.sl-eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    background: currentColor;
+}
+
+.sl-office {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: clamp(2.3rem, 4.6vw, 3.4rem);
+    line-height: 1.05;
+    color: #fff;
+}
+
+.sl-lead {
+    max-width: 30rem;
+    margin: 1.1rem 0 1.75rem;
+    font-size: 1.02rem;
+    line-height: 1.7;
+    color: #c9d3df;
+}
+
+.sl-points {
+    display: grid;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sl-points li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 0.95rem;
+    color: #dfe5ec;
+}
+
+.sl-points svg {
+    flex: none;
+    padding: 7px;
+    box-sizing: content-box;
+    border: 1px solid rgba(226, 188, 107, 0.35);
+    border-radius: 10px;
+    color: #e2bc6b;
+    background: rgba(226, 188, 107, 0.08);
+}
+
+/* ---- Card ---- */
+.sl-card {
+    padding: clamp(1.75rem, 4vw, 2.5rem);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 18px;
+    background: var(--paper-raised, #fff);
+    color: var(--ink);
+    box-shadow: 0 30px 70px rgba(5, 12, 24, 0.45), 0 2px 0 rgba(226, 188, 107, 0.9) inset;
+}
+
+.sl-card h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--ink);
+}
+
+.sl-card-sub {
+    margin: 0.5rem 0 1.75rem;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+}
+
+.sl-form {
+    display: grid;
+    gap: 1.1rem;
+}
+
+.sl-field label,
+.sl-label-row label {
+    display: block;
+    margin-bottom: 0.45rem;
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.sl-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sl-input > svg {
+    position: absolute;
+    left: 0.95rem;
+    color: var(--ink-soft);
+    pointer-events: none;
+}
+
+.sl-input input {
+    width: 100%;
+    min-height: 50px;
+    padding: 0 2.9rem 0 2.75rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    background: var(--paper);
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.98rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.sl-input input::placeholder { color: color-mix(in srgb, var(--ink-soft) 70%, transparent); }
+
+.sl-input input:hover { border-color: color-mix(in srgb, var(--kinabalu-blue) 45%, var(--line-strong)); }
+
+.sl-input input:focus {
+    outline: none;
+    border-color: var(--kinabalu-blue);
+    background: var(--paper-raised, #fff);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--kinabalu-blue) 18%, transparent);
+}
+
+.sl-input:focus-within > svg { color: var(--kinabalu-blue); }
+
+.sl-reveal {
+    position: absolute;
+    right: 0.35rem;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--ink-soft);
+    cursor: pointer;
+}
+
+.sl-reveal:hover,
+.sl-reveal[aria-pressed='true'] { color: var(--ink); background: var(--sky-tint); }
+
+.sl-remember {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    min-height: 44px;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    cursor: pointer;
+}
+
+.sl-remember input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--navy);
+}
+
+.sl-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    min-height: 52px;
+    border: 0;
+    border-radius: 10px;
+    background: var(--navy);
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    box-shadow: 0 10px 22px rgba(16, 27, 45, 0.25);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sl-submit svg { transition: transform 0.2s ease; }
+.sl-submit:hover { background: #1d2f4a; box-shadow: 0 12px 26px rgba(16, 27, 45, 0.32); }
+.sl-submit:hover svg { transform: translateX(3px); }
+.sl-submit:focus-visible { outline: 3px solid #e2bc6b; outline-offset: 3px; }
+
+.sl-status {
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(201, 154, 61, 0.45);
+    border-radius: 10px;
+    background: #fbf4e4;
+    color: #6e5019;
+    font-size: 0.88rem;
+    line-height: 1.5;
+}
+
+.sl-help {
+    display: grid;
+    gap: 0.2rem;
+    margin-top: 1.6rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+    font-size: 0.86rem;
+    color: var(--ink-soft);
+}
+
+.sl-help a { color: var(--kinabalu-blue); font-weight: 600; text-decoration: none; }
+.sl-help a:hover { text-decoration: underline; }
+
+/* ---- Dark mode ---- */
+html[data-theme='dark'] .sl,
+html[data-theme='dark'] .sl-backdrop { background-color: #0d1626; }
+html[data-theme='dark'] .sl-card { border-color: rgba(255, 255, 255, 0.1); box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5), 0 2px 0 rgba(226, 188, 107, 0.8) inset; }
+html[data-theme='dark'] .sl-submit { background: #e2bc6b; color: #101b2d; }
+html[data-theme='dark'] .sl-submit:hover { background: #f0cd84; }
+html[data-theme='dark'] .sl-remember input { accent-color: #e2bc6b; }
+html[data-theme='dark'] .sl-status { background: rgba(226, 188, 107, 0.12); color: #f0d79f; }
+
+/* ---- Tablet & phone: card first, intro shortened ---- */
+@media (max-width: 860px) {
+    .sl { align-items: flex-start; padding-top: calc(var(--nav-height-condensed, 64px) + 3rem); }
+    .sl-shell { grid-template-columns: minmax(0, 1fr); max-width: 480px; gap: 2rem; }
+    .sl-intro { text-align: center; }
+    .sl-crest { display: block; width: 44px; margin: 0 auto 1rem; }
+    .sl-eyebrow { justify-content: center; }
+    .sl-lead, .sl-points { display: none; }
+    .sl-backdrop { background-size: 100% 100%, 900px auto, 900px auto, 100% 100%, 100% 100%; background-position: center, center bottom -170px, center bottom -160px, center, center; }
+}
+
+@media (max-width: 420px) {
+    .sl { padding-left: 1rem; padding-right: 1rem; }
+    .sl-card { border-radius: 14px; }
+}
+
+/* ---- Live login messages and staff registration ---- */
+.sl-card > .sl-status { margin-bottom: 1rem; }
+.sl-status-ok { border-color: rgba(42, 105, 67, 0.35); background: #ecf8ef; color: #2a6943; }
+.sl-field-error { margin: 0.35rem 0 0; font-size: 0.82rem; color: #a4382c; }
+.sl-register .sl-shell { grid-template-columns: minmax(0, 0.8fr) minmax(0, 560px); }
+.sl-register .sl-input input { padding-left: 0.95rem; }
+.sl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.sl-hint { margin: 0.35rem 0 0; font-size: 0.8rem; color: var(--ink-soft); }
+
+@media (max-width: 860px) {
+    .sl-register .sl-shell { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 520px) {
+    .sl-grid { grid-template-columns: 1fr; }
+}
+
+/* =====================================================================
+   Sleek sign-in (staff, system admins, CMS admins). Scoped to .sl-login
+   so the registration page keeps its own layout.
+   ===================================================================== */
+.sl-login {
+    justify-content: center;
+    padding-top: calc(var(--nav-height, 84px) + var(--nav-gap, 1rem) + 2rem);
+    padding-bottom: 3.5rem;
+}
+
+
+.sl-panel {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+    animation: sl-rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes sl-rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: none; }
+}
+
+/* Glass card */
+.sl-login .sl-card {
+    position: relative;
+    padding: 2rem 2rem 1.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 22px;
+    background: rgba(17, 29, 48, 0.86);
+    color: #e9eef5;
+    box-shadow: 0 30px 80px rgba(3, 8, 18, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(18px) saturate(1.3);
+    -webkit-backdrop-filter: blur(18px) saturate(1.3);
+}
+
+
+.sl-head {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-bottom: 1.6rem;
+}
+
+.sl-login .sl-crest { width: 34px; margin: 0; filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4)); }
+.sl-login .sl-eyebrow { margin: 0 0 0.1rem; font-size: 0.68rem; letter-spacing: 0.2em; }
+.sl-login .sl-eyebrow::before { width: 16px; }
+.sl-login .sl-office { font-size: 1.05rem; line-height: 1.2; font-family: var(--font-body, inherit); font-weight: 600; letter-spacing: 0.01em; }
+
+.sl-login .sl-card h1 {
+    color: #fff;
+    font-size: clamp(1.9rem, 4vw, 2.3rem);
+    letter-spacing: -0.01em;
+}
+
+.sl-login .sl-card-sub { margin: 0.45rem 0 1.5rem; color: #a9b7c9; font-size: 0.92rem; line-height: 1.55; }
+
+/* Messages */
+.sl-login .sl-card > .sl-status { margin-bottom: 0.9rem; }
+.sl-login .sl-status {
+    border-color: rgba(255, 140, 120, 0.35);
+    background: rgba(255, 120, 100, 0.1);
+    color: #ffc9bf;
+}
+.sl-login .sl-status-ok {
+    border-color: rgba(120, 210, 160, 0.35);
+    background: rgba(120, 210, 160, 0.1);
+    color: #bdebcf;
+}
+
+/* Fields */
+.sl-login .sl-form { gap: 1rem; }
+.sl-login .sl-field label {
+    margin-bottom: 0.4rem;
+    color: #cfd9e6;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.sl-login .sl-input > svg { color: #8597ae; transition: color 0.2s ease, opacity 0.2s ease; }
+
+.sl-login .sl-input input {
+    min-height: 52px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.sl-login .sl-input input::placeholder { color: rgba(201, 211, 223, 0.45); }
+.sl-login .sl-input input:hover { border-color: rgba(255, 255, 255, 0.22); }
+.sl-login .sl-input input:focus {
+    border-color: rgba(127, 179, 230, 0.75);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 4px rgba(91, 155, 213, 0.18);
+}
+.sl-login .sl-input:focus-within > svg { color: #9cc4ec; }
+
+/* Keep autofilled fields dark instead of the browser's pale yellow */
+.sl-login .sl-input input:-webkit-autofill {
+    -webkit-text-fill-color: #fff;
+    caret-color: #fff;
+    box-shadow: 0 0 0 1000px #1a2940 inset;
+    transition: background-color 9999s ease 0s;
+}
+
+/* User icon, or a mail icon once an e-mail is typed (CMS admin) */
+.sl-login .sl-icon-mail { opacity: 0; }
+.sl-login .is-cms .sl-icon-user { opacity: 0; }
+.sl-login .is-cms .sl-icon-mail { opacity: 1; }
+
+.sl-account {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0.45rem 0 0;
+    color: #8fa1b8;
+    font-size: 0.78rem;
+}
+.sl-account::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    flex: none;
+    border-radius: 50%;
+    background: #5b9bd5;
+}
+.sl-login .is-cms .sl-account { color: #e2bc6b; }
+.sl-login .is-cms .sl-account::before { background: #e2bc6b; }
+
+.sl-caps { margin: 0.45rem 0 0; color: #f0cd84; font-size: 0.78rem; font-weight: 600; }
+
+.sl-login .sl-reveal { color: #8597ae; }
+.sl-login .sl-reveal:hover,
+.sl-login .sl-reveal[aria-pressed='true'] { color: #fff; background: rgba(255, 255, 255, 0.08); }
+
+.sl-login .sl-remember { min-height: 36px; color: #a9b7c9; font-size: 0.86rem; }
+.sl-login .sl-remember input { accent-color: #e2bc6b; }
+
+/* Button */
+.sl-login .sl-submit {
+    min-height: 52px;
+    margin-top: 0.2rem;
+    border-radius: 12px;
+    background: #e2bc6b;
+    color: #101b2d;
+    box-shadow: none;
+}
+.sl-login .sl-submit:hover { background: #ebc87c; box-shadow: none; }
+.sl-login .sl-submit:focus-visible { outline-color: #fff; }
+.sl-login .sl-submit:disabled { cursor: progress; opacity: 0.85; }
+
+.sl-spinner {
+    display: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(16, 27, 45, 0.3);
+    border-top-color: #101b2d;
+    border-radius: 50%;
+    animation: sl-spin 0.7s linear infinite;
+}
+.sl-login .is-loading .sl-spinner { display: inline-block; }
+.sl-login .is-loading .sl-arrow { display: none; }
+
+@keyframes sl-spin { to { transform: rotate(360deg); } }
+
+/* Help */
+.sl-login .sl-help {
+    margin-top: 1.3rem;
+    padding-top: 1.1rem;
+    border-top-color: rgba(255, 255, 255, 0.08);
+    color: #8fa1b8;
+    font-size: 0.82rem;
+    gap: 0.3rem;
+}
+.sl-login .sl-help a { color: #e2bc6b; }
+
+/* Role hints under the card */
+.sl-roles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin: 1rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+.sl-roles li {
+    display: grid;
+    gap: 0.1rem;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    background: rgba(13, 22, 38, 0.45);
+    text-align: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+.sl-roles strong { color: #e9eef5; font-size: 0.76rem; font-weight: 600; }
+.sl-roles span { color: #8fa1b8; font-size: 0.72rem; }
+
+/* The site's dark mode keeps the same look; just deepen the card a little */
+html[data-theme='dark'] .sl-login .sl-card {
+    border-color: rgba(255, 255, 255, 0.12);
+    background: rgba(14, 24, 41, 0.9);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+html[data-theme='dark'] .sl-login .sl-submit { background: #e2bc6b; }
+html[data-theme='dark'] .sl-login .sl-status { background: rgba(255, 120, 100, 0.1); color: #ffc9bf; }
+html[data-theme='dark'] .sl-login .sl-status-ok { background: rgba(120, 210, 160, 0.1); color: #bdebcf; }
+
+@media (max-width: 860px) {
+    .sl-login { align-items: flex-start; padding-top: calc(var(--nav-height-condensed, 64px) + 2.25rem); }
+}
+
+@media (max-width: 480px) {
+    .sl-login { padding-left: 1rem; padding-right: 1rem; }
+    .sl-login .sl-card { padding: 1.6rem 1.25rem 1.3rem; border-radius: 18px; }
+    .sl-roles { grid-template-columns: 1fr; }
+    .sl-roles li { grid-template-columns: auto 1fr; text-align: left; gap: 0.6rem; }
+    .sl-roles span { text-align: right; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sl-panel { animation: none; }
+    .sl-spinner { animation-duration: 2s; }
+}

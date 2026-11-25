@@ -1,0 +1,718 @@
+/* A restrained visual finish for public pages, using the existing theme. */
+:root {
+  --surface-radius: 12px;
+  --surface-shadow: 0 4px 18px rgba(16, 27, 45, 0.06);
+}
+
+body {
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+:focus-visible {
+  outline: 3px solid var(--kinabalu-blue);
+  outline-offset: 4px;
+}
+
+.navbar :focus-visible, .site-footer :focus-visible {
+  outline-color: #f0c66d;
+}
+
+.navbar {
+  border-width: 1px;
+  box-shadow: 0 6px 24px rgba(16, 27, 45, 0.12);
+}
+
+body.is-home .navbar:not(.is-condensed),
+body.has-banner .navbar:not(.is-condensed) {
+  box-shadow: none;
+}
+
+.logo-text small {
+  font-size: 0.75rem;
+  color: #e0e6ee;
+}
+
+.nav-links > li > a, .dropdown-toggle {
+  min-height: 44px;
+}
+
+.dropdown-menu {
+  border-color: var(--line-strong);
+  border-radius: var(--surface-radius);
+  box-shadow: 0 12px 30px rgba(16, 27, 45, 0.16);
+}
+
+.dropdown-menu li a {
+  min-height: 44px;
+  line-height: 1.5;
+  border-radius: 8px;
+}
+
+.theme-toggle, .hamburger {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.hamburger {
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header {
+  border-bottom: 2px solid var(--gold);
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  letter-spacing: -0.015em;
+  line-height: 1.2;
+}
+
+.breadcrumb {
+  color: #d8e2ee;
+  line-height: 1.6;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  color: #b8c7d8;
+}
+
+.page-header--plain {
+  min-height: 0;
+  padding: calc(var(--nav-height) + var(--nav-gap) + 2rem) 0 2rem;
+  background: var(--paper);
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.page-header--plain h1 {
+  color: var(--ink);
+}
+
+.page-header--plain .breadcrumb,
+.page-header--plain .breadcrumb li:not(:last-child)::after {
+  color: var(--ink-soft);
+}
+
+.page-header--plain .breadcrumb a {
+  color: var(--kinabalu-blue);
+}
+
+.page-header--plain .breadcrumb a:hover {
+  color: var(--ink);
+}
+
+.section-head h2, :is(.hb-section, .hb-page) .hb-head h2 {
+  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.section-head p {
+  line-height: 1.7;
+  color: var(--ink-soft);
+}
+
+.hero-content h1 {
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.hero-content .hero-text > p:not(.hero-eyebrow) {
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.75;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  max-width: 47ch;
+  margin-inline: auto;
+  color: #f1f5f9;
+}
+
+.hero-content .hero-eyebrow {
+  letter-spacing: 0.12em;
+  color: #f1d8a4;
+}
+
+.btn, :is(.hb-section, .hb-page) .hb-all {
+  min-height: 44px;
+  border-radius: 8px;
+}
+
+.btn-primary {
+  color: #101b2d;
+}
+
+.btn-primary:hover {
+  color: #101b2d;
+  background: #d6aa50;
+}
+
+/* Content stays readable while entering the viewport. */
+.quick-access-card, .hb-head, .hb-feature, .hb-card {
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+.quick-access-card {
+  border-radius: var(--surface-radius);
+  border: 1px solid rgba(16, 27, 45, 0.15);
+  box-shadow: var(--surface-shadow);
+}
+
+.quick-access-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(16, 27, 45, 0.14);
+}
+
+.quick-access-label {
+  font-size: 0.8125rem;
+  color: #e2eaf4;
+  opacity: 1;
+}
+
+:is(.hb-section, .hb-page) .hb-feature-media,
+:is(.hb-section, .hb-page) .hb-card,
+:is(.hb-section, .hb-page) .hb-item {
+  border-radius: var(--surface-radius);
+  box-shadow: var(--surface-shadow);
+}
+
+:is(.hb-section, .hb-page) .hb-card-text h4 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+:is(.hb-section, .hb-page) .hb-feature-body h3 {
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+:is(.hb-section, .hb-page) .hb-meta {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+:is(.hb-section, .hb-page) .hb-all {
+  border-width: 1px;
+}
+
+.notice-block, .location-directory .directory-toolbar,
+.location-directory .sk-card, .location-directory .ka-card,
+.location-directory .ka-details {
+  border-radius: var(--surface-radius);
+  box-shadow: var(--surface-shadow);
+}
+
+.directory-map-button {
+  min-height: 44px;
+  font-size: 0.8125rem;
+  border-radius: 8px;
+}
+
+.directory-location-name {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+.directory-results, .directory-map-area {
+  font-size: 0.875rem;
+}
+
+.site-footer {
+  border-top: 2px solid var(--gold);
+}
+
+.footer-brand h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.footer-address {
+  color: #c5d0df;
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+.footer-label, .footer-bottom {
+  color: #adbdcf;
+}
+
+.footer-col h5 {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.footer-col a, .footer-legal a, .footer-contact-row a {
+  color: #d2dce8;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.footer-col a:hover, .footer-legal a:hover, .footer-contact-row a:hover {
+  text-decoration: none;
+}
+
+.footer-contact-row a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+html[data-theme='dark'] {
+  --surface-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+@media (min-width: 1281px) {
+  .dropdown:focus-within .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .dropdown:focus-within .dropdown-menu li {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 1280px) {
+  .dropdown-menu:not(.active) {
+    display: none;
+  }
+
+  .dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    pointer-events: auto;
+  }
+
+  .dropdown-menu.active li {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-content .hero-text > p:not(.hero-eyebrow) {
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 35ch;
+  }
+
+  .section-head h2, :is(.hb-section, .hb-page) .hb-head h2 {
+    font-size: 1.75rem;
+  }
+
+  :is(.hb-section, .hb-page) .hb-head {
+    gap: 0.75rem;
+  }
+
+  :is(.hb-section, .hb-page) .hb-all {
+    font-size: 0.875rem;
+    padding-inline: 0.85rem;
+  }
+
+  .footer-col a, .footer-legal a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin-bottom: 0.2rem;
+  }
+
+  .footer-contact-row {
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quick-access-card, .hb-card, .hb-feature-media img,
+  .dropdown-menu, .dropdown-menu li {
+    transition: none;
+  }
+}
+
+/* Content created through the simple CMS editor. */
+.cms-blocks { width:min(1120px, calc(100% - 40px)); margin:48px auto; color:inherit; overflow-wrap:anywhere; }
+#main > .cms-blocks:first-child { margin-top:0; padding-top:calc(var(--nav-height) + var(--nav-gap) + 2rem); }
+.cms-blocks > * + * { margin-top:24px; }
+.cms-blocks h1 { font-size:clamp(30px,4vw,46px); line-height:1.2; }
+.cms-blocks h2 { font-size:clamp(24px,3vw,32px); line-height:1.3; }
+.cms-blocks h3 { font-size:22px; line-height:1.4; }
+.cms-blocks p, .cms-blocks li { font-size:17px; line-height:1.8; }
+.cms-blocks ul { padding-left:1.5em; }
+.cms-blocks figure { margin-inline:0; }
+.cms-blocks img { display:block; width:auto; max-width:100%; height:auto; max-height:800px; object-fit:contain; border-radius:12px; }
+.cms-blocks figcaption { margin-top:10px; font-size:14px; opacity:.8; }
+.cms-blocks a { text-decoration:underline; text-underline-offset:3px; }
+.cms-blocks:empty { display:none; }
+.hb-meta .hb-author { flex-basis:100%; min-width:0; max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:.8rem; }
+.hb-card--with-author .hb-card-text { gap:6px; }
+.hb-card--with-author .hb-card-text h4 { -webkit-line-clamp:2; }
+.hb-card--with-author .hb-meta { row-gap:3px; }
+.hb-article > .hb-meta .hb-author { white-space:normal; overflow-wrap:anywhere; }
+
+/* Hero banners created through the CMS editor. */
+.cms-hero { position:relative; isolation:isolate; display:grid; align-items:center; min-height:440px; padding:4rem 0; background:#101b2d; color:#fff; border-bottom:2px solid var(--gold); overflow-wrap:anywhere; }
+.cms-hero--compact { min-height:300px; padding:3rem 0; }
+#main > .cms-hero:first-of-type { padding-top:calc(var(--nav-height) + var(--nav-gap) + 3rem); }
+.cms-hero .cms-hero-media { position:absolute; inset:0; z-index:-2; width:100%; max-width:none; height:100%; max-height:none; object-fit:cover; border-radius:0; }
+.cms-hero--fit-contain .cms-hero-media { object-fit:contain; }
+.cms-hero--image:not(.cms-hero--image-only)::before { content:''; position:absolute; inset:0; z-index:-1; background:rgba(9,20,37,.76); }
+.cms-hero .cms-hero-inner { width:100%; }
+.cms-hero .cms-hero-eyebrow { margin:0 0 1rem; color:#f0ce87; font-size:.85rem; line-height:1.5; font-weight:600; letter-spacing:.1em; text-transform:uppercase; }
+.cms-hero .cms-hero-title { max-width:24ch; margin:0; color:#fff; font-size:clamp(2rem,4.3vw,3.6rem); line-height:1.15; font-weight:400; }
+.cms-hero .cms-hero-description { max-width:64ch; margin:1.25rem 0 0; color:#e4eaf2; font-size:clamp(1rem,1.5vw,1.125rem); line-height:1.75; }
+.cms-hero .cms-hero-button { display:inline-flex; justify-content:center; align-items:center; min-height:48px; padding:.8rem 1.25rem; margin-top:1.75rem; border:1px solid #e2bc6b; border-radius:var(--surface-radius); background:#e2bc6b; color:#101b2d; font-family:var(--font-body); font-size:1rem; font-weight:600; line-height:1.5; text-decoration:none; }
+.cms-hero .cms-hero-button:hover { background:#f0ce87; border-color:#f0ce87; }
+.cms-hero .cms-hero-button:focus-visible { outline-color:#fff; }
+.cms-hero--center { text-align:center; }
+.cms-hero--center .cms-hero-title, .cms-hero--center .cms-hero-description { margin-inline:auto; }
+@media(max-width:640px) {
+  .cms-hero { min-height:380px; padding:3rem 0; }
+  .cms-hero--compact { min-height:280px; padding:2rem 0; }
+  #main > .cms-hero:first-of-type { padding-top:calc(var(--nav-height) + var(--nav-gap) + 2rem); }
+}
+
+.information-page main {
+  --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --font-display: var(--font-body);
+  font-family: var(--font-body);
+}
+
+.information-page main :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-body);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.information-page main a,
+.information-page main a:hover {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   Inner pages v2 — the same look as the new homepage: navy page header with the
+   Kinabalu ridge illustration, gold accents, softer cards.
+   (Loaded after every page stylesheet, so these win without extra specificity.)
+   ========================================================================== */
+:root {
+  --radius: 8px;
+  --surface-radius: 10px;
+}
+
+/* ---- Page header: compact, plain navy band (no illustration) so content starts higher ---- */
+.page-header--plain {
+  position: relative;
+  isolation: isolate;
+  min-height: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: calc(var(--nav-height) + var(--nav-gap) + 1.75rem) 0 2rem;
+  border-bottom: 3px solid #e2bc6b;
+  color: #fff;
+  background: var(--navy);
+  overflow: hidden;
+}
+
+.page-header--plain h1 {
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.12;
+  max-width: 32ch;
+  text-wrap: balance;
+}
+
+.page-header--plain p {
+  max-width: 64ch;
+  margin-top: 0.6rem;
+  color: #c9d3df;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.page-header--plain .breadcrumb {
+  margin-bottom: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.page-header--plain .breadcrumb,
+.page-header--plain .breadcrumb li:not(:last-child)::after {
+  color: #9fb0c3;
+}
+
+.page-header--plain .breadcrumb a {
+  color: #e2bc6b;
+  text-decoration: none;
+}
+
+.page-header--plain .breadcrumb a:hover {
+  color: #fff;
+}
+
+.information-page .page-header--plain h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+html[data-theme='dark'] .page-header--plain {
+  background-color: #0d1626;
+}
+
+/* ---- Section headings: the same gold rule as the homepage ---- */
+.section-head::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 0 auto 1rem;
+  border-radius: 2px;
+  background: var(--gold);
+}
+
+/* ---- Fade-up for blocks further down inner pages (kinomulok.js tags them) ---- */
+html.hm-reveal-ready [data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html.hm-reveal-ready [data-reveal].is-revealed {
+  opacity: 1;
+  transform: none;
+}
+
+@media (max-width: 640px) {
+  .page-header--plain {
+    padding: calc(var(--nav-height-condensed, 64px) + 3.5rem) 0 1.5rem;
+  }
+
+  .page-header--plain .breadcrumb {
+    font-size: 0.72rem;
+  }
+}
+
+/* ---- Staff login button in the navbar (where the dark-mode button used to be) ---- */
+.nav-staff-btn {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 42px;
+  padding: 0 1.05rem;
+  border-radius: 999px;
+  background: #e2bc6b;
+  color: #101b2d;
+  font-size: 0.9rem;
+  font-weight: 700;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: 0 0 0 3px rgba(226, 188, 107, 0.28), 0 6px 16px rgba(10, 20, 35, 0.25);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-staff-btn:hover,
+.nav-staff-btn:focus-visible {
+  background: #f0cd84;
+  color: #101b2d;
+  box-shadow: 0 0 0 4px rgba(226, 188, 107, 0.4), 0 8px 20px rgba(10, 20, 35, 0.3);
+}
+
+.navbar .nav-staff-btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+
+@media (max-width: 1280px) {
+  /* menu collapses into the hamburger: keep the button beside it on the right */
+  .nav-staff-btn { margin-left: auto; margin-right: 0.5rem; }
+}
+
+@media (max-width: 520px) {
+  /* phones: icon-only round button so logo + button + hamburger fit */
+  .nav-staff-btn { width: 40px; min-height: 40px; padding: 0; justify-content: center; margin-right: 0.25rem; }
+  .nav-staff-btn .nav-staff-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+
+/* ---- Dark-mode button: floating, stacked above the accessibility button ---- */
+.theme-toggle.theme-fab {
+  position: fixed;
+  left: 24px;
+  bottom: calc(24px + 52px + 12px);
+  z-index: 94; /* just under the accessibility panel, which opens over it */
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  border: 1.5px solid rgba(201, 154, 61, 0.55);
+  background: var(--navy);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(16, 27, 45, 0.3);
+}
+
+.theme-toggle.theme-fab:hover { background: #1d2f4a; border-color: rgba(226, 188, 107, 0.85); }
+
+@media (max-width: 640px) {
+  .theme-toggle.theme-fab { left: 16px; bottom: calc(16px + 52px + 10px); }
+}
+
+/* Desktop navbar: room for the language switcher + staff button. Wider capsule on big screens;
+   between 1281px and 1599px the staff button becomes a round gold icon so nothing spills out. */
+@media (min-width: 1281px) {
+  .navbar { max-width: 1480px; }
+  .navbar .logo { flex-shrink: 1; min-width: 0; }
+  .nav-staff-btn { padding: 0 0.95rem; font-size: 0.88rem; }
+}
+
+@media (min-width: 1281px) and (max-width: 1599px) {
+  .nav-staff-btn { width: 42px; padding: 0; justify-content: center; }
+  .nav-staff-btn .nav-staff-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+
+/* ---- Staff login button, sleek version: gold pill with a navy icon badge ---- */
+.nav-staff-btn {
+  gap: 0.6rem;
+  min-height: 44px;
+  padding: 4px 1.1rem 4px 4px;
+  border: 1px solid rgba(255, 233, 184, 0.55);
+  background: #e2bc6b;
+  color: #101b2d;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 6px 18px rgba(201, 154, 61, 0.35);
+  transition: box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.nav-staff-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #101b2d;
+  color: #f0cd84;
+  box-shadow: inset 0 0 0 1px rgba(240, 205, 132, 0.35);
+  transition: transform 0.25s ease;
+}
+
+.nav-staff-btn:hover,
+.nav-staff-btn:focus-visible {
+  background: #ebc87c;
+  color: #101b2d;
+  filter: saturate(1.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 8px 24px rgba(226, 188, 107, 0.5);
+}
+
+.nav-staff-btn:hover .nav-staff-icon { transform: scale(1.06); }
+
+/* on the staff login page itself */
+.nav-staff-btn[aria-current='page'] {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 0 3px rgba(255, 255, 255, 0.85), 0 6px 18px rgba(201, 154, 61, 0.35);
+}
+
+/* icon-only sizes (laptops 1281–1599px, phones): just the badge inside a thin gold ring */
+@media (min-width: 1281px) and (max-width: 1599px) {
+  .nav-staff-btn { width: 44px; padding: 4px; }
+}
+
+@media (max-width: 520px) {
+  .nav-staff-btn { width: 42px; min-height: 42px; padding: 3px; }
+}
+
+/* ---- Staff login button: text only ("Log Masuk Staf") at every size, no icon ---- */
+.nav-staff-btn {
+  padding: 0 1.15rem;
+  gap: 0;
+}
+
+.nav-staff-btn .nav-staff-label {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+}
+
+@media (min-width: 1281px) and (max-width: 1599px) {
+  /* laptops: tighter navbar so the full label still fits */
+  .nav-staff-btn { width: auto; padding: 0 0.95rem; font-size: 0.84rem; }
+  .navbar { gap: 0.75rem; padding: 0 1.1rem; }
+  .nav-links > li > a, .dropdown-toggle { padding: 0.55rem 0.5rem; font-size: 0.87rem; }
+}
+
+@media (max-width: 520px) {
+  /* phones: compact pill beside the hamburger */
+  .nav-staff-btn { width: auto; min-height: 38px; padding: 0 0.75rem; font-size: 0.78rem; }
+}
+
+/* ---- Staff login button: flat gold, no gradient, sheen or glow ---- */
+.nav-staff-btn,
+.nav-staff-btn[aria-current='page'] {
+  border: 0;
+  background: #e2bc6b;
+  box-shadow: none;
+  filter: none;
+}
+
+.nav-staff-btn:hover,
+.nav-staff-btn:focus-visible {
+  background: #ebc87c;
+  box-shadow: none;
+  filter: none;
+}
+
+/* on the staff login page itself: a plain white outline instead of a glow */
+.nav-staff-btn[aria-current='page'] {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* ---- Staff login button: flat white, light blue on hover ---- */
+.nav-staff-btn,
+.nav-staff-btn[aria-current='page'] {
+  background: #ffffff;
+  color: #101b2d;
+}
+
+.nav-staff-btn:hover,
+.nav-staff-btn:focus-visible {
+  background: #dbe9f7;
+  color: #101b2d;
+}
+
+.nav-staff-btn[aria-current='page'] {
+  outline-color: #9cc3ea;
+}
+
+/* Narrower navbar capsule on desktop */
+@media (min-width: 1281px) {
+  .navbar { max-width: 1380px; }
+}
+
+/* Desktop: logo on the left, menu links grouped on the right next to BM and Log Masuk Staf */
+@media (min-width: 1281px) {
+  .navbar { justify-content: flex-start; }
+  .navbar > .nav-links { margin-left: auto; }
+  .navbar > .nav-staff-btn { margin-left: 0.25rem; }
+}
+
+/* ---- Headings: Bricolage Grotesque, set bold with slightly tight spacing ---- */
+h1, h2, h3, h4 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h3, h4 { letter-spacing: -0.01em; }

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="320" viewBox="0 0 480 320" role="img" aria-label="Gambar akan dikemas kini">
+  <rect width="480" height="320" fill="#eef2f7"/>
+  <path d="M60 250 L170 130 L230 195 L290 115 L420 250 Z" fill="#cfd9e6"/>
+  <path d="M290 115 L318 145 L300 150 L285 138 L270 150 Z" fill="#ffffff"/>
+  <circle cx="370" cy="85" r="22" fill="#e2bc6b"/>
+  <text x="240" y="292" text-anchor="middle" font-family="Public Sans, Segoe UI, sans-serif" font-size="18" font-weight="600" fill="#5b6b80">Gambar akan dikemas kini</text>
+</svg>

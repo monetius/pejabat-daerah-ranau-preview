@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="ms"><head>
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("theme");
+                if (!t && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+                if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+            } catch (e) { }
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelancongan - Pejabat Daerah Ranau</title>
+    <meta name="description" content="Peta pelancongan dan senarai tarikan, aktiviti serta penginapan di Daerah Ranau, Sabah.">
+        <meta property="og:site_name" content="Pejabat Daerah Ranau">
+    <meta property="og:locale" content="ms_MY">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pelancongan - Pejabat Daerah Ranau">
+    <meta property="og:description" content="Peta pelancongan dan senarai tarikan, aktiviti serta penginapan di Daerah Ranau, Sabah.">
+    <meta property="og:url" content="/profil-daerah/pelancongan">
+    <meta property="og:image" content="/assets/img/og-default.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../../assets/css/sabahtea.css?v=1795582377">
+    <link rel="stylesheet" href="../../assets/css/navbar.css?v=1795144576">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="../../assets/css/footer.css?v=1793068558">
+    <link rel="stylesheet" href="../../assets/css/pelancongan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/css/dark.css?v=1793068558">
+    <link rel="stylesheet" href="../../assets/css/professional.css?v=1795582377">
+    <link rel="stylesheet" href="../../assets/css/accessibility.css?v=1793068558">
+</head>
+
+<body class="">
+    <a href="#main" class="skip-link">Langkau ke kandungan utama</a>
+<nav class="navbar notranslate" lang="ms" translate="no">
+  <a href="../../" class="logo">
+    <img src="../../assets/img/coat.png" alt="Jata Negeri Sabah" class="logo-img">
+    <span class="logo-text">Pejabat Daerah Ranau<small>Kerajaan Negeri Sabah</small></span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+<li><a href="../../">Laman Utama</a></li>
+                    <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Info Korporat
+                <span class="arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+                                    <li><a href="../../info-korporat/mengenai-kami/">Mengenai Kami</a></li>
+                                    <li><a href="../../info-korporat/carta-organisasi/">Carta Organisasi</a></li>
+                                    <li><a href="../../info-korporat/hebahan-integriti/">Hebahan Integriti</a></li>
+                                    <li><a href="../../halaman/web-test-preview/">testing</a></li>
+                            </ul>
+        </li>
+                    <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Profil Daerah
+                <span class="arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+                                    <li><a href="../../profil-daerah/kemudahan-awam/">Senarai Kemudahan Awam</a></li>
+                                    <li><a href="../../profil-daerah/senarai-kampung/">Senarai Kampung</a></li>
+                                    <li><a href="../../profil-daerah/wakil-rakyat/">Wakil Rakyat</a></li>
+                                    <li><a href="../../profil-daerah/ekasih/">eKasih</a></li>
+                                    <li><a href="../../profil-daerah/pelancongan/">Pelancongan</a></li>
+                                    <li><a href="../../profil-daerah/data-penduduk/">Data Penduduk Daerah Ranau</a></li>
+                                    <li><a href="../../profil-daerah/pelan-pembangunan/">Pelan Pembangunan</a></li>
+                            </ul>
+        </li>
+                    <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Perkhidmatan Online
+                <span class="arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+                                    <li><a href="https://i-adu.sabah.gov.my/">Sistem Aduan Awam</a></li>
+                                    <li><a href="../../perkhidmatan-online/latihan-industri/">Permohonan Latihan Industri</a></li>
+                                    <li><a href="../../perkhidmatan-online/lesen-berniaga/">Permohonan Lesen Berniaga</a></li>
+                            </ul>
+        </li>
+                    <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Galeri &amp; Pautan
+                <span class="arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+                                    <li><a href="../../galeri-pautan/gambar/">Gambar</a></li>
+                                    <li><a href="../../galeri-pautan/video/">Video</a></li>
+                                    <li><a href="../../galeri-pautan/intranet/">Intranet</a></li>
+                                    <li><a href="../../galeri-pautan/agensi/">Pautan Agensi</a></li>
+                            </ul>
+        </li>
+                    <li><a href="../../hubungi-kami/alamat/">Hubungi Kami</a></li>
+    
+</ul>
+  
+  <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+    <main id="main">
+            <div class="page-header page-header--plain">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a href="../../">Laman Utama</a></li>
+            <li>Profil Daerah</li>
+            <li>Pelancongan</li>
+          </ul>
+          <h1>Pelancongan</h1>
+        </div>
+      </div>
+      <section>
+        <div class="container">
+          <div class="tr-intro">
+            <h2>Terokai Ranau, di kaki Gunung Kinabalu</h2>
+            <p>
+              Daerah Ranau terkenal dengan Gunung Kinabalu (4,095m), ladang
+              tenusu, teh Sabah, sungai untuk rafting, air panas serta homestay
+              yang mesra. Gunakan peta di bawah untuk merancang perjalanan anda
+              dari Bundu Tuhan hingga ke Luanti Baru.
+            </p>
+          </div>
+          <div class="tr-stats">
+            <div class="tr-stat"><b>4,095m</b><span>Gunung Kinabalu</span></div>
+            <div class="tr-stat"><b>3</b><span>Kawasan DUN</span></div>
+            <div class="tr-stat"><b>38</b><span>Tempat pelancongan</span></div>
+            <div class="tr-stat"><b>80+</b><span>Pilihan penginapan</span></div>
+          </div>
+
+          <div class="tr-map" id="peta">
+            <figure>
+              <img src="../../assets/img/pelancongan/peta-tarikan.webp" alt="Peta Pelancongan Ranau (Ranau Tourist Fun Map) menunjukkan tarikan di Bundu Tuhan, Kundasang, Kibbas, Pekan Ranau, Lohan dan Luanti Baru" loading="lazy">
+              <figcaption>
+                <span>Ranau Tourist Fun Map: jarak antara kawasan adalah
+                  anggaran.</span><a href="../../assets/img/pelancongan/peta-tarikan.webp" target="_blank" rel="noopener">Buka saiz penuh</a>
+              </figcaption>
+            </figure>
+          </div>
+
+          <h2 class="tr-h" id="tarikan">Tempat pelancongan mengikut DUN</h2>
+<p class="tr-sub">38 tempat pelancongan di Daerah Ranau, disusun mengikut kawasan Dewan Undangan Negeri. Klik koordinat untuk membuka lokasi di Google Maps.</p>
+<nav class="tr-dun-nav" aria-label="Lompat ke DUN">
+<a href="#dun-36"><b>N.36</b> Kundasang <span>15</span></a>
+<a href="#dun-37"><b>N.37</b> Karanaan <span>8</span></a>
+<a href="#dun-38"><b>N.38</b> Paginatan <span>15</span></a>
+</nav>
+<section class="tr-dun" id="dun-36" aria-labelledby="dun-36-title">
+<div class="tr-dun-head"><h3 id="dun-36-title"><span>DUN N.36</span> Kundasang</h3><p>Kaki Gunung Kinabalu: ladang tenusu, bukit pemandangan dan pendakian.</p></div>
+<div class="tr-table-wrap"><table class="tr-table">
+<thead><tr><th scope="col">Bil.</th><th scope="col">Nama tempat</th><th scope="col">Koordinat</th><th scope="col">Gambar</th></tr></thead><tbody>
+<tr><td class="tr-num">1</td><th scope="row">Desa Cattle Dairy Farm, Mesilou</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.01640,116.59136" target="_blank" rel="noopener">6.01640, 116.59136</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Desa Cattle Dairy Farm, Mesilou" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">2</td><th scope="row">Sosodikon Hill</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.99771,116.59347" target="_blank" rel="noopener">5.99771, 116.59347</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Sosodikon Hill" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">3</td><th scope="row">Kundasang War Memorial</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.98735,116.57631" target="_blank" rel="noopener">5.98735, 116.57631</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Kundasang War Memorial" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">4</td><th scope="row">Kinabalu Park</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.00570,116.54260" target="_blank" rel="noopener">6.00570, 116.54260</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Ibu pejabat taman</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Kinabalu Park" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">5</td><th scope="row">Gunung Kinabalu</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.07507,116.55870" target="_blank" rel="noopener">6.07507, 116.55870</a><small>Puncak Low (4,095 m)</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Gunung Kinabalu" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">6</td><th scope="row">Maragang Hill</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.03920,116.58577" target="_blank" rel="noopener">6.03920, 116.58577</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Maragang Hill" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">7</td><th scope="row">Mesilou Highland Strawberry Farm</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.01728,116.59917" target="_blank" rel="noopener">6.01728, 116.59917</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Mesilou Highland Strawberry Farm" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">8</td><th scope="row">Mesilou Cat's Village</th><td class="tr-loc"><span class="tr-pin tr-pin--none">Belum disahkan</span><small>Kawasan Mesilou</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Mesilou Cat's Village" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">9</td><th scope="row">Kundasang Strawberry Farm</th><td class="tr-loc"><span class="tr-pin tr-pin--none">Belum disahkan</span></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Kundasang Strawberry Farm" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">10</td><th scope="row">Alpaca Club</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.00650,116.58799" target="_blank" rel="noopener">6.00650, 116.58799</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Alpaca Club" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">11</td><th scope="row">Mount Kinabalu Golf Club</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.02709,116.59681" target="_blank" rel="noopener">6.02709, 116.59681</a> <span class="tr-pin tr-pin--approx">Anggaran</span></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Mount Kinabalu Golf Club" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">12</td><th scope="row">Tinorindak Hill</th><td class="tr-loc"><span class="tr-pin tr-pin--none">Belum disahkan</span><small>Berhampiran Culvert View</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Tinorindak Hill" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">13</td><th scope="row">Kundasang Mount Valley Recreation</th><td class="tr-loc"><span class="tr-pin tr-pin--none">Belum disahkan</span></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Kundasang Mount Valley Recreation" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">14</td><th scope="row">Panar Laban</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.05904,116.56615" target="_blank" rel="noopener">6.05904, 116.56615</a><small>Laban Rata, 3,272 m</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Panar Laban" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">15</td><th scope="row">Mountain Torq Via Ferrata</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.05904,116.56615" target="_blank" rel="noopener">6.05904, 116.56615</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Titik mula di Panar Laban</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Mountain Torq Via Ferrata" width="120" height="80" loading="lazy"></td></tr>
+</tbody></table></div></section>
+<section class="tr-dun" id="dun-37" aria-labelledby="dun-37-title">
+<div class="tr-dun-head"><h3 id="dun-37-title"><span>DUN N.37</span> Karanaan</h3><p>Terapi ikan, bukit pemandangan dan sejarah Death March.</p></div>
+<div class="tr-table-wrap"><table class="tr-table">
+<thead><tr><th scope="col">Bil.</th><th scope="col">Nama tempat</th><th scope="col">Koordinat</th><th scope="col">Gambar</th></tr></thead><tbody>
+<tr><td class="tr-num">1</td><th scope="row">Bombon Marakau Fish Spa</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.94437,116.69291" target="_blank" rel="noopener">5.94437, 116.69291</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Bombon Marakau Fish Spa" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">2</td><th scope="row">Dompurungon Hill, Kampung Marakau</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.94974,116.68616" target="_blank" rel="noopener">5.94974, 116.68616</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Kawasan Kg. Marakau</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Dompurungon Hill, Kampung Marakau" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">3</td><th scope="row">Lugas Hill, Kampung Waang</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.92224,116.60179" target="_blank" rel="noopener">5.92224, 116.60179</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Kawasan Kg. Waang</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Lugas Hill, Kampung Waang" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">4</td><th scope="row">Zudin Platform, Death March</th><td class="tr-loc"><span class="tr-pin tr-pin--none">Belum disahkan</span></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Zudin Platform, Death March" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">5</td><th scope="row">Quailey's Hill Memorial</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.94556,116.78083" target="_blank" rel="noopener">5.94556, 116.78083</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Quailey's Hill Memorial" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">6</td><th scope="row">Tarikan pelancongan Kampung Karanaan</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.92896,116.53836" target="_blank" rel="noopener">5.92896, 116.53836</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Kawasan Kg. Karanaan</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Tarikan pelancongan Kampung Karanaan" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">7</td><th scope="row">Kawasan rekreasi Kampung Randagong</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.91120,116.56007" target="_blank" rel="noopener">5.91120, 116.56007</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Jalan ke Kg. Randagong</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Kawasan rekreasi Kampung Randagong" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">8</td><th scope="row">Kawasan pelancongan Kampung Tudan</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.93583,116.48943" target="_blank" rel="noopener">5.93583, 116.48943</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Kawasan Kg. Tudan</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Kawasan pelancongan Kampung Tudan" width="120" height="80" loading="lazy"></td></tr>
+</tbody></table></div></section>
+<section class="tr-dun" id="dun-38" aria-labelledby="dun-38-title">
+<div class="tr-dun-head"><h3 id="dun-38-title"><span>DUN N.38</span> Paginatan</h3><p>Ladang teh, air panas, air terjun dan sungai.</p></div>
+<div class="tr-table-wrap"><table class="tr-table">
+<thead><tr><th scope="col">Bil.</th><th scope="col">Nama tempat</th><th scope="col">Koordinat</th><th scope="col">Gambar</th></tr></thead><tbody>
+<tr><td class="tr-num">1</td><th scope="row">Sabah Tea Garden, Kampung Nalapak</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.94822,116.78544" target="_blank" rel="noopener">5.94822, 116.78544</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Sabah Tea Garden, Kampung Nalapak" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">2</td><th scope="row">Ranau Paragliding Park</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.99252,116.68591" target="_blank" rel="noopener">5.99252, 116.68591</a><small>Kompleks Sukan Ranau</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Ranau Paragliding Park" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">3</td><th scope="row">Tagal Sungai Moroli, Kampung Luanti Baru</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.94633,116.76938" target="_blank" rel="noopener">5.94633, 116.76938</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Tagal Sungai Moroli, Kampung Luanti Baru" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">4</td><th scope="row">Taralamas River Canyon, Kampung Tiang Lama</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.78595,116.60293" target="_blank" rel="noopener">5.78595, 116.60293</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Laluan bermula di Kg. Tiang Lama</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Taralamas River Canyon, Kampung Tiang Lama" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">5</td><th scope="row">Tiang Lama Eco Tourism</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.78595,116.60293" target="_blank" rel="noopener">5.78595, 116.60293</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Kawasan Kg. Tiang Lama</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Tiang Lama Eco Tourism" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">6</td><th scope="row">Poring Hot Spring</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.04796,116.70230" target="_blank" rel="noopener">6.04796, 116.70230</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Poring Hot Spring" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">7</td><th scope="row">Kipungit Waterfall</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.05157,116.70098" target="_blank" rel="noopener">6.05157, 116.70098</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Kipungit Waterfall" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">8</td><th scope="row">Langanan Waterfall</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.06365,116.68589" target="_blank" rel="noopener">6.06365, 116.68589</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Langanan Waterfall" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">9</td><th scope="row">Nulu Tompong Ranau</th><td class="tr-loc"><span class="tr-pin tr-pin--none">Belum disahkan</span></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Nulu Tompong Ranau" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">10</td><th scope="row">Rafflesia Conservation Garden</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.03912,116.71365" target="_blank" rel="noopener">6.03912, 116.71365</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Kawasan Poring</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Rafflesia Conservation Garden" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">11</td><th scope="row">Orchid Conservation Centre</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=6.04796,116.70230" target="_blank" rel="noopener">6.04796, 116.70230</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Dalam kompleks Poring Hot Spring</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Orchid Conservation Centre" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">12</td><th scope="row">Sungai Biru Lohan</th><td class="tr-loc"><span class="tr-pin tr-pin--none">Belum disahkan</span><small>Kawasan Lohan</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Sungai Biru Lohan" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">13</td><th scope="row">Kinomulok Garden, Lohan Ulu</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.99465,116.70279" target="_blank" rel="noopener">5.99465, 116.70279</a> <span class="tr-pin tr-pin--approx">Anggaran</span><small>Kawasan Kg. Lohan Ulu</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Kinomulok Garden, Lohan Ulu" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">14</td><th scope="row">The Last POW Camp Memorial, Kenipir</th><td class="tr-loc"><a class="tr-coord" href="https://www.google.com/maps?q=5.90778,116.64806" target="_blank" rel="noopener">5.90778, 116.64806</a></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar The Last POW Camp Memorial, Kenipir" width="120" height="80" loading="lazy"></td></tr>
+<tr><td class="tr-num">15</td><th scope="row">Arnab Village</th><td class="tr-loc"><span class="tr-pin tr-pin--none">Belum disahkan</span><small>Kg. Purakagis, kira-kira 1.6 km dari simpang Kibbas</small></td><td class="tr-img"><img src="../../assets/img/pelancongan/gambar-belum-ada.svg" alt="Gambar Arnab Village" width="120" height="80" loading="lazy"></td></tr>
+</tbody></table></div></section>
+<p class="tr-note tr-coord-note"><b>Tentang koordinat:</b> lokasi bertanda <i>Anggaran</i> menunjukkan kawasan kampung atau titik mula laluan, bukan lokasi tepat tarikan. Lokasi <i>Belum disahkan</i> akan dikemas kini. Sila maklumkan pembetulan kepada <a href="../../hubungi-kami/alamat/">Pejabat Daerah Ranau</a>.</p>
+<div class="tr-more"><h3>Tarikan lain dalam peta pelancongan</h3><ul class="tr-chips"><li>Gua Kimondou</li><li>Nuluh Giring-Giring</li><li>Nunuk Ragang</li><li>Bukit Kapur, Kg. Tobok Lama</li><li>Komplek Sukan Ranau</li><li>Tamu Ranau</li></ul></div>
+
+          <h2 class="tr-h" id="penginapan">Tempat penginapan</h2>
+          <p class="tr-sub">
+            Senarai hotel, chalet, homestay dan tapak perkhemahan beserta nombor
+            telefon untuk tempahan.
+          </p>
+          <div class="tr-stay">
+            <div class="tr-map">
+              <figure>
+                <img src="../../assets/img/pelancongan/peta-penginapan.webp" alt="Peta pelancongan Ranau dengan senarai tempat penginapan dan nombor telefon" loading="lazy">
+                <figcaption>
+                  <span>Lihat saiz penuh untuk membaca nombor telefon.</span><a href="../../assets/img/pelancongan/peta-penginapan.webp" target="_blank" rel="noopener">Buka saiz penuh</a>
+                </figcaption>
+              </figure>
+            </div>
+            <p class="tr-note">
+              Sila sahkan harga, ketersediaan dan nombor telefon terus dengan
+              pengendali penginapan sebelum membuat tempahan.
+            </p>
+          </div>
+          <p class="tr-credit">
+            Peta dengan kerjasama Ranau Tourism Association (RaTa), Tourism
+            Malaysia dan Best of Borneo Sabah. Untuk pertanyaan, sila
+            <a href="../../hubungi-kami/alamat/">hubungi Pejabat Daerah Ranau</a>.
+          </p>
+        </div>
+      </section>
+      </main>
+    <footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h4>Pejabat Daerah Ranau</h4>
+        <p class="footer-address">
+          Peti Surat 2<br>
+          89307 Ranau<br>
+          Sabah, Malaysia
+        </p>
+        <div class="footer-contact-row">
+          <div>
+            <span class="footer-label">No. Telefon</span>
+            <a href="tel:0888755000">088-875500</a>
+          </div>
+          <div>
+            <span class="footer-label">Faks</span>
+            <a href="tel:0888755011">088-875511</a>
+          </div>
+          <div class="footer-contact-email">
+            <span class="footer-label">E-mel</span>
+            <a href="mailto:pd.ranau@sabah.gov.my">pd.ranau@sabah.gov.my</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Info Korporat</h5>
+        <a href="../../info-korporat/mengenai-kami/">Mengenai Kami</a>
+        <a href="../../info-korporat/carta-organisasi/">Carta Organisasi</a>
+        <a href="../../info-korporat/hebahan-integriti/">Hebahan Integriti</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Profil Daerah</h5>
+        <a href="../../profil-daerah/kemudahan-awam/">Senarai Kemudahan Awam</a>
+        <a href="../../profil-daerah/senarai-kampung/">Senarai Kampung</a>
+        <a href="../../profil-daerah/wakil-rakyat/">Wakil Rakyat</a>
+        <a href="../../profil-daerah/ekasih/">eKasih</a>
+        <a href="../../profil-daerah/pelancongan/">Pelancongan</a>
+        <a href="../../profil-daerah/data-penduduk/">Data Penduduk Daerah Ranau</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Perkhidmatan Online</h5>
+        <a href="https://i-adu.sabah.gov.my/">Sistem Aduan Awam</a>
+        <a href="../../perkhidmatan-online/latihan-industri/">Permohonan Latihan Industri</a>
+        <a href="../../perkhidmatan-online/lesen-berniaga/">Permohonan Lesen Berniaga</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Galeri &amp; Pautan</h5>
+        <a href="../../galeri-pautan/gambar/">Gambar</a>
+        <a href="../../galeri-pautan/video/">Video</a>
+        <a href="../../galeri-pautan/intranet/">Intranet</a>
+        <a href="../../galeri-pautan/agensi/">Pautan Agensi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <nav class="footer-legal" aria-label="Pautan tambahan">
+        <a href="../../info-korporat/soalan-lazim/">Soalan Lazim (FAQ)</a>
+        <a href="../../peta-laman/">Peta Laman</a>
+        <a href="../../hubungi-kami/alamat/">Hubungi Kami</a>
+        <a href="../../info-korporat/privacypolicy/">Dasar Privasi</a>
+        <a href="../../info-korporat/notice/">Notis Penafian</a>
+        <a href="../../info-korporat/securitypolicy/">Dasar Keselamatan</a>
+        <a href="https://www.facebook.com/PDRanau"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@pejabatdaerahranau">
+          <i class="fa-brands fa-youtube"></i></a>
+      </nav>
+      <p>
+        © 2026 Hak Cipta Pejabat Daerah Ranau (JPKN). Hak cipta
+        terpelihara.
+      </p>
+      <p>Kemas Kini Terakhir: 25/11/2026</p>
+    </div>
+  </div>
+</footer>
+    <button class="theme-toggle theme-fab notranslate" id="themeToggle" type="button" aria-label="Tukar ke mod gelap" aria-pressed="false" title="Mod gelap" translate="no">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"></path></svg>
+    </button>
+    <script src="../../assets/js/kinomulok.js?v=1795587611"></script>
+      
+    
+
+</body></html>
