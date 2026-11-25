@@ -94,8 +94,24 @@
         </li>
                     <li><a href="../../../hubungi-kami/alamat/">Hubungi Kami</a></li>
     
-</ul>
-  
+<li class="nav-language-item"><div class="nav-language-switch notranslate" aria-label="Bahasa" translate="no">
+        <span class="nav-language-caption">Bahasa / Language</span>
+    
+    <button type="button" id="langToggle" aria-label="Bahasa / Language" aria-expanded="false" aria-controls="langMenu">
+        <i class="fa-solid fa-language" aria-hidden="true"></i>
+        <span data-language-label="">BM</span>
+        <span aria-hidden="true">▾</span>
+    </button>
+    <div class="nav-language-menu" id="langMenu" hidden="">
+        <button type="button" data-lang="ms" lang="ms" aria-pressed="true">Bahasa Melayu</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">English</button>
+        <button type="button" data-lang="zh-CN" lang="zh-CN" aria-pressed="false">中文</button>
+        <button type="button" data-lang="ta" lang="ta" aria-pressed="false">தமிழ்</button>
+        <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+    </div>
+</div>
+</li></ul>
+  <a class="nav-staff-btn" href="../../../staf/login/" aria-label="Log Masuk Staf" title="Log Masuk Staf"><span class="nav-staff-label">Log Masuk Staf</span></a>
   <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -120,7 +136,10 @@
                       <a href="../../../hebahan/kategori/berita/" class="on">Berita</a>
                       <a href="../../../hebahan/kategori/notis/" class="">Notis</a>
                   </div>
-        
+        <form class="hb-search" method="get" data-static-form="">
+          <input type="hidden" name="kategori" value="berita">          <input type="search" name="q" value="" placeholder="Cari hebahan atau berita..." aria-label="Cari">
+          <button type="submit">Cari</button>
+        </form>
       </div>
 
               <div class="hb-list">
@@ -237,4 +256,18 @@
     <script src="../../../assets/js/kinomulok.js?v=1795587611"></script>
     
 
-</body></html>
+<script>document.addEventListener('submit', function (event) {
+  var form = event.target.closest('[data-static-form]');
+  if (!form) return;
+  event.preventDefault();
+  event.stopImmediatePropagation();
+  var note = form.querySelector('.static-form-note');
+  if (!note) {
+    note = document.createElement('p');
+    note.className = 'static-form-note';
+    note.setAttribute('role', 'status');
+    note.style.cssText = 'margin:.75rem 0 0;padding:.6rem .8rem;border-radius:6px;background:#fff4d6;color:#5c4400;font-size:.9rem;line-height:1.4';
+    form.appendChild(note);
+  }
+  note.textContent = 'Ini salinan pratonton. Borang ini hanya berfungsi di laman web sebenar.';
+}, true);</script></body></html>

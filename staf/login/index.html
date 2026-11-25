@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="ms"><head>
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("theme");
+                if (!t && window.matchMedia("(prefers-color-scheme: dark)").matches) t = "dark";
+                if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+            } catch (e) { }
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Masuk Staf - Pejabat Daerah Ranau</title>
+    <meta name="description" content="Log masuk staf Pejabat Daerah Ranau.">
+        <meta property="og:site_name" content="Pejabat Daerah Ranau">
+    <meta property="og:locale" content="ms_MY">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Log Masuk Staf - Pejabat Daerah Ranau">
+    <meta property="og:description" content="Log masuk staf Pejabat Daerah Ranau.">
+    <meta property="og:url" content="/staf/login">
+    <meta property="og:image" content="/assets/img/og-default.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="../../assets/css/sabahtea.css?v=1795582377">
+    <link rel="stylesheet" href="../../assets/css/navbar.css?v=1795144576">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="../../assets/css/footer.css?v=1793068558">
+        <link rel="stylesheet" href="../../assets/css/staff.css?v=1795495834">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="../../assets/img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/css/dark.css?v=1793068558">
+    <link rel="stylesheet" href="../../assets/css/professional.css?v=1795582377">
+    <link rel="stylesheet" href="../../assets/css/accessibility.css?v=1793068558">
+</head>
+
+<body class="staff-login-page">
+    <a href="#main" class="skip-link">Langkau ke kandungan utama</a>
+<nav class="navbar notranslate" lang="ms" translate="no">
+  <a href="../../" class="logo">
+    <img src="../../assets/img/coat.png" alt="Jata Negeri Sabah" class="logo-img">
+    <span class="logo-text">Pejabat Daerah Ranau<small>Kerajaan Negeri Sabah</small></span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+<li><a href="../../">Laman Utama</a></li>
+                    <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Info Korporat
+                <span class="arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+                                    <li><a href="../../info-korporat/mengenai-kami/">Mengenai Kami</a></li>
+                                    <li><a href="../../info-korporat/carta-organisasi/">Carta Organisasi</a></li>
+                                    <li><a href="../../info-korporat/hebahan-integriti/">Hebahan Integriti</a></li>
+                                    <li><a href="../../halaman/web-test-preview/">testing</a></li>
+                            </ul>
+        </li>
+                    <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Profil Daerah
+                <span class="arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+                                    <li><a href="../../profil-daerah/kemudahan-awam/">Senarai Kemudahan Awam</a></li>
+                                    <li><a href="../../profil-daerah/senarai-kampung/">Senarai Kampung</a></li>
+                                    <li><a href="../../profil-daerah/wakil-rakyat/">Wakil Rakyat</a></li>
+                                    <li><a href="../../profil-daerah/ekasih/">eKasih</a></li>
+                                    <li><a href="../../profil-daerah/pelancongan/">Pelancongan</a></li>
+                                    <li><a href="../../profil-daerah/data-penduduk/">Data Penduduk Daerah Ranau</a></li>
+                                    <li><a href="../../profil-daerah/pelan-pembangunan/">Pelan Pembangunan</a></li>
+                            </ul>
+        </li>
+                    <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Perkhidmatan Online
+                <span class="arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+                                    <li><a href="https://i-adu.sabah.gov.my/">Sistem Aduan Awam</a></li>
+                                    <li><a href="../../perkhidmatan-online/latihan-industri/">Permohonan Latihan Industri</a></li>
+                                    <li><a href="../../perkhidmatan-online/lesen-berniaga/">Permohonan Lesen Berniaga</a></li>
+                            </ul>
+        </li>
+                    <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-haspopup="true">
+                Galeri &amp; Pautan
+                <span class="arrow" aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+                                    <li><a href="../../galeri-pautan/gambar/">Gambar</a></li>
+                                    <li><a href="../../galeri-pautan/video/">Video</a></li>
+                                    <li><a href="../../galeri-pautan/intranet/">Intranet</a></li>
+                                    <li><a href="../../galeri-pautan/agensi/">Pautan Agensi</a></li>
+                            </ul>
+        </li>
+                    <li><a href="../../hubungi-kami/alamat/">Hubungi Kami</a></li>
+    
+<li class="nav-language-item"><div class="nav-language-switch notranslate" aria-label="Bahasa" translate="no">
+        <span class="nav-language-caption">Bahasa / Language</span>
+    
+    <button type="button" id="langToggle" aria-label="Bahasa / Language" aria-expanded="false" aria-controls="langMenu">
+        <i class="fa-solid fa-language" aria-hidden="true"></i>
+        <span data-language-label="">BM</span>
+        <span aria-hidden="true">▾</span>
+    </button>
+    <div class="nav-language-menu" id="langMenu" hidden="">
+        <button type="button" data-lang="ms" lang="ms" aria-pressed="true">Bahasa Melayu</button>
+        <button type="button" data-lang="en" lang="en" aria-pressed="false">English</button>
+        <button type="button" data-lang="zh-CN" lang="zh-CN" aria-pressed="false">中文</button>
+        <button type="button" data-lang="ta" lang="ta" aria-pressed="false">தமிழ்</button>
+        <button type="button" data-lang="ko" lang="ko" aria-pressed="false">한국어</button>
+    </div>
+</div>
+</li></ul>
+  <a class="nav-staff-btn" href="../../staf/login/" aria-label="Log Masuk Staf" title="Log Masuk Staf" aria-current="page"><span class="nav-staff-label">Log Masuk Staf</span></a>
+  <button class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+    <main id="main">
+            
+    <section class="sl sl-login" aria-labelledby="sl-title">
+        <div class="sl-backdrop" aria-hidden="true"></div>
+
+        <div class="sl-panel">
+            <div class="sl-card">
+                <header class="sl-head">
+                    <img class="sl-crest" src="../../assets/img/coat.png" alt="Jata Negeri Sabah" width="144" height="240">
+                    <div>
+                        <p class="sl-eyebrow">Portal Staf</p>
+                        <p class="sl-office">Pejabat Daerah Ranau</p>
+                    </div>
+                </header>
+
+                <h1 id="sl-title">Selamat kembali</h1>
+                <p class="sl-card-sub">Log masuk untuk tempahan bilik mesyuarat, bayaran dan sistem dalaman pejabat.</p>
+
+                                                                                                                                            
+                <form class="sl-form" method="get" data-staff-login="" data-static-form="">
+                                        <div class="sl-field">
+                        <label for="sl-username">ID staf / nama pengguna / e-mel</label>
+                        <div class="sl-input">
+                            <svg class="sl-icon-user" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21a8 8 0 0 1 16 0"></path></svg>
+                            <svg class="sl-icon-mail" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+                            <input id="sl-username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="190" placeholder="cth. pdr0123 atau nama@sabah.gov.my" value="" aria-describedby="sl-account-kind" required="" autofocus="">
+                        </div>
+                        <p class="sl-account" id="sl-account-kind" aria-live="polite" data-account-kind="" data-text-staff="Staf atau pentadbir sistem" data-text-cms="Pentadbir CMS · kod pengesahan akan dihantar ke e-mel anda">Staf atau pentadbir sistem</p>
+                    </div>
+
+                    <div class="sl-field">
+                        <label for="sl-password">Kata laluan</label>
+                        <div class="sl-input">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+                            <input id="sl-password" name="password" type="password" autocomplete="current-password" aria-describedby="sl-caps" required="">
+                            <button class="sl-reveal" type="button" aria-label="Tunjukkan kata laluan" aria-pressed="false" data-reveal-password="">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </button>
+                        </div>
+                        <p class="sl-caps" id="sl-caps" role="status" hidden="">Caps Lock dihidupkan</p>
+                    </div>
+
+                    <label class="sl-remember"><input type="checkbox" name="remember" value="1"> Ingat saya pada peranti ini</label>
+
+                    <button class="sl-submit" type="submit" data-submit="">
+                        <span class="sl-spinner" aria-hidden="true"></span>
+                        <span data-submit-label="">Log Masuk</span>
+                        <svg class="sl-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+                    </button>
+                </form>
+
+                <div class="sl-help">
+                    <span>Belum ada akaun? <a href="../../staf/daftar/">Daftar akaun staf</a></span>
+                    <span>Terlupa kata laluan? <a href="tel:+6088875500">088-875500</a> · <a href="mailto:pd.ranau@sabah.gov.my">pd.ranau@sabah.gov.my</a></span>
+                </div>
+            </div>
+
+            <ul class="sl-roles" aria-label="Cara log masuk mengikut peranan">
+                <li><strong>Staf</strong><span>ID staf</span></li>
+                <li><strong>Pentadbir sistem</strong><span>Nama pengguna</span></li>
+                <li><strong>Pentadbir CMS</strong><span>E-mel + kod</span></li>
+            </ul>
+        </div>
+    </section>
+    </main>
+    <footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h4>Pejabat Daerah Ranau</h4>
+        <p class="footer-address">
+          Peti Surat 2<br>
+          89307 Ranau<br>
+          Sabah, Malaysia
+        </p>
+        <div class="footer-contact-row">
+          <div>
+            <span class="footer-label">No. Telefon</span>
+            <a href="tel:0888755000">088-875500</a>
+          </div>
+          <div>
+            <span class="footer-label">Faks</span>
+            <a href="tel:0888755011">088-875511</a>
+          </div>
+          <div class="footer-contact-email">
+            <span class="footer-label">E-mel</span>
+            <a href="mailto:pd.ranau@sabah.gov.my">pd.ranau@sabah.gov.my</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Info Korporat</h5>
+        <a href="../../info-korporat/mengenai-kami/">Mengenai Kami</a>
+        <a href="../../info-korporat/carta-organisasi/">Carta Organisasi</a>
+        <a href="../../info-korporat/hebahan-integriti/">Hebahan Integriti</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Profil Daerah</h5>
+        <a href="../../profil-daerah/kemudahan-awam/">Senarai Kemudahan Awam</a>
+        <a href="../../profil-daerah/senarai-kampung/">Senarai Kampung</a>
+        <a href="../../profil-daerah/wakil-rakyat/">Wakil Rakyat</a>
+        <a href="../../profil-daerah/ekasih/">eKasih</a>
+        <a href="../../profil-daerah/pelancongan/">Pelancongan</a>
+        <a href="../../profil-daerah/data-penduduk/">Data Penduduk Daerah Ranau</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Perkhidmatan Online</h5>
+        <a href="https://i-adu.sabah.gov.my/">Sistem Aduan Awam</a>
+        <a href="../../perkhidmatan-online/latihan-industri/">Permohonan Latihan Industri</a>
+        <a href="../../perkhidmatan-online/lesen-berniaga/">Permohonan Lesen Berniaga</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Galeri &amp; Pautan</h5>
+        <a href="../../galeri-pautan/gambar/">Gambar</a>
+        <a href="../../galeri-pautan/video/">Video</a>
+        <a href="../../galeri-pautan/intranet/">Intranet</a>
+        <a href="../../galeri-pautan/agensi/">Pautan Agensi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <nav class="footer-legal" aria-label="Pautan tambahan">
+        <a href="../../info-korporat/soalan-lazim/">Soalan Lazim (FAQ)</a>
+        <a href="../../peta-laman/">Peta Laman</a>
+        <a href="../../hubungi-kami/alamat/">Hubungi Kami</a>
+        <a href="../../info-korporat/privacypolicy/">Dasar Privasi</a>
+        <a href="../../info-korporat/notice/">Notis Penafian</a>
+        <a href="../../info-korporat/securitypolicy/">Dasar Keselamatan</a>
+        <a href="https://www.facebook.com/PDRanau"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@pejabatdaerahranau">
+          <i class="fa-brands fa-youtube"></i></a>
+      </nav>
+      <p>
+        © 2026 Hak Cipta Pejabat Daerah Ranau (JPKN). Hak cipta
+        terpelihara.
+      </p>
+      <p>Kemas Kini Terakhir: 25/11/2026</p>
+    </div>
+  </div>
+</footer>
+    <button class="theme-toggle theme-fab notranslate" id="themeToggle" type="button" aria-label="Tukar ke mod gelap" aria-pressed="false" title="Mod gelap" translate="no">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"></path></svg>
+    </button>
+    <script src="../../assets/js/kinomulok.js?v=1795587611"></script>
+    <script>
+(() => {
+  const form = document.querySelector('[data-staff-login]');
+  if (!form) return;
+  const username = form.querySelector('#sl-username');
+  const password = form.querySelector('#sl-password');
+  const reveal = form.querySelector('[data-reveal-password]');
+  const kind = form.querySelector('[data-account-kind]');
+  const caps = form.querySelector('#sl-caps');
+  const submit = form.querySelector('[data-submit]');
+
+  // Show which kind of account the typed ID belongs to (an e-mail means a CMS admin).
+  const updateKind = () => {
+    const isCms = username.value.includes('@');
+    form.classList.toggle('is-cms', isCms);
+    kind.textContent = isCms ? kind.dataset.textCms : kind.dataset.textStaff;
+  };
+  username.addEventListener('input', updateKind);
+  updateKind();
+
+  reveal.addEventListener('click', () => {
+    const show = password.type === 'password';
+    password.type = show ? 'text' : 'password';
+    reveal.setAttribute('aria-pressed', String(show));
+    reveal.setAttribute('aria-label', show ? 'Sembunyikan kata laluan' : 'Tunjukkan kata laluan');
+    password.focus();
+  });
+
+  const checkCaps = (event) => {
+    if (typeof event.getModifierState === 'function') caps.hidden = !event.getModifierState('CapsLock');
+  };
+  password.addEventListener('keydown', checkCaps);
+  password.addEventListener('keyup', checkCaps);
+  password.addEventListener('blur', () => { caps.hidden = true; });
+
+  // Loading state; also stops a double submit.
+  form.addEventListener('submit', () => {
+    if (!form.checkValidity()) return;
+    submit.disabled = true;
+    form.classList.add('is-loading');
+    submit.querySelector('[data-submit-label]').textContent = 'Sedang log masuk…';
+  });
+  window.addEventListener('pageshow', () => {
+    submit.disabled = false;
+    form.classList.remove('is-loading');
+    submit.querySelector('[data-submit-label]').textContent = 'Log Masuk';
+  });
+})();
+</script>
+
+
+<script>document.addEventListener('submit', function (event) {
+  var form = event.target.closest('[data-static-form]');
+  if (!form) return;
+  event.preventDefault();
+  event.stopImmediatePropagation();
+  var note = form.querySelector('.static-form-note');
+  if (!note) {
+    note = document.createElement('p');
+    note.className = 'static-form-note';
+    note.setAttribute('role', 'status');
+    note.style.cssText = 'margin:.75rem 0 0;padding:.6rem .8rem;border-radius:6px;background:#fff4d6;color:#5c4400;font-size:.9rem;line-height:1.4';
+    form.appendChild(note);
+  }
+  note.textContent = 'Ini salinan pratonton. Borang ini hanya berfungsi di laman web sebenar.';
+}, true);</script></body></html>
